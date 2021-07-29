@@ -194,22 +194,3 @@ console.log(data[0].message);
 
 
   }
-//////////////////////////////
-
-var date =20210631;
-          
-          var url ='https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?valcode='+currency+'&date='+date+'&json';
-          fetch(url)
-         .then((response) => {
-             return response.json();
-         })
-          .then((data) => {
-            
-            if(!data[0].message)
-           console.log(data[0].message);
-            // document.write("<br>"+exchangedate+" "+dataRate+" "+dataTxt+" ");
-            
-           
-    
-         });
-    
